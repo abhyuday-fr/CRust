@@ -1,0 +1,14 @@
+[package]
+name = "crust"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"          
+
+[dependencies]
+libc       = "0.2"          
+bytemuck   = { version = "1.16", features = ["derive"] }  
+ratatui    = "0.28"         
+crossterm  = "0.28"         
+
+[build-dependencies]
+cc = "1.0"                  
